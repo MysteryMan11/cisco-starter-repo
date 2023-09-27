@@ -4,6 +4,7 @@ import React from 'react';
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
 import IPAddress from './components/IPaddress';
+import LatencyMeter from './components/LatencyMeter';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           <Banner/>
           <Exhibit/>
           <IPAddress/>
+          <LatencyMeter/>
       </div>
   );
 }
