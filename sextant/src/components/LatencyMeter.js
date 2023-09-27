@@ -14,7 +14,7 @@ const LatencyMeter = () => {
             const packetTime = parseInt(event.data, 10); // Parsing the string to a number
             const currentTime = new Date().getTime();
             const calculatedLatency = currentTime - packetTime;
-            setLatency(`Latency: ${calculatedLatency} ms`);
+            setLatency(`${calculatedLatency} ms`);
         };
 
         websocket.onerror = (error) => {
@@ -34,8 +34,7 @@ const LatencyMeter = () => {
 
     return (
         <div>
-            <h3>Packet Latency from Pylon</h3>
-            <p>{latency}</p>
+            <h2>Your Latency is: <br/><h1>{latency}</h1></h2>
         </div>
     );
 };

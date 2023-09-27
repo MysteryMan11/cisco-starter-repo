@@ -12,7 +12,7 @@ const IPAddress = () => {
 
     return (
         <div>
-            <h1>Your IP Address is: {ipAddress}</h1>
+            <h2>Your IP Address is: <br/><h1>{ipAddress}</h1></h2>
         </div>
     )
 }
