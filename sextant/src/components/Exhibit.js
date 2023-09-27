@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Exhibit = ({ children }) => {
+const Exhibit = () => {
     return (
         <div style={{margin: '20px', padding: '20px', border: '1px solid black'}}>
-            <h2>Heading 1</h2>
-            {children}
+            <h2>Exhibit Heading</h2>
         </div>
     );
 };
